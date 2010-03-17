@@ -9,6 +9,8 @@ public class AdapterTest {
 
 	public void test() {
 		Adaptee adaptee = new Adaptee();
+		// the adapter is the new interface that the client requires in order to
+		// work with the system
 		Adapter adapter = new AdapterImpl(adaptee);
 		Client c = new Client(adapter);
 		c.method();
