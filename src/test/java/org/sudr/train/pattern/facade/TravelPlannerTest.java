@@ -1,9 +1,7 @@
+package org.sudr.train.pattern.facade;
+
 import java.util.Date;
 
-import org.sudr.train.pattern.facade.FlightBooker;
-import org.sudr.train.pattern.facade.HotelBooker;
-import org.sudr.train.pattern.facade.TravelOptions;
-import org.sudr.train.pattern.facade.TravelPlanner;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
