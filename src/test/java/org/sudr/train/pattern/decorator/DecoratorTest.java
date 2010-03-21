@@ -4,6 +4,11 @@ import junit.framework.Assert;
 
 import org.testng.annotations.Test;
 
+/**
+ * Allows for the dynamic wrapping of objects in order to modify their existing
+ * responsibilities and behaviours.
+ * 
+ */
 @Test
 public class DecoratorTest {
 

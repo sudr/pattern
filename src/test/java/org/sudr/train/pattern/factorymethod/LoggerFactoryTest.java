@@ -3,6 +3,10 @@ package org.sudr.train.pattern.factorymethod;
 import org.testng.annotations.Test;
 
 /**
+ * Define an interface for creating an object, but let the subclasses decide
+ * which class to instantiate. The Factory method lets a class defer
+ * instantiation to subclasses.
+ * 
  * A simple factory usually works fine. Factory method provides further
  * decoupling by allowing the subclass to decide what concrete implementation to
  * create.
