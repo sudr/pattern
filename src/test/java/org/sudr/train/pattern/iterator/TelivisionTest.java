@@ -7,6 +7,11 @@ import junit.framework.Assert;
 
 import org.testng.annotations.Test;
 
+/**
+ * Provides a way to access the elements of an aggregate object without exposing
+ * its underlying represenation.
+ * 
+ */
 @Test
 public class TelivisionTest {
 
@@ -16,10 +21,10 @@ public class TelivisionTest {
 		channels.add("cnn");
 		ChannelIterator it = tv.iterator();
 		String currentChannel = it.currentChannel();
-		
+
 		Assert.assertEquals("cnn", currentChannel);
 	}
-	
+
 	public void returns_all_channels_going_forward() {
 		List<String> channels = new ArrayList<String>();
 		Telivision tv = new ConcreteTV(channels);
@@ -35,7 +40,7 @@ public class TelivisionTest {
 			it.next();
 		}
 	}
-	
+
 	public void returns_all_channels_going_backwards() {
 		List<String> channels = new ArrayList<String>();
 		Telivision tv = new ConcreteTV(channels);
